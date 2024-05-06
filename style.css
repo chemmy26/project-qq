@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', Helvetica;
+}
+body{
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  background-image: url(front2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  padding: 1.3rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.navbar a{
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 50px;
+  transition: color .12s;
+}
+
+.navbar a:hover{
+  color: rgb(44, 172, 44);
+}
+
+.content{
+  width: 50%;
+  position: absolute;
+  top: 38%;
+  text-align: center;
+}
+.contents {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  position: absolute;
+  top: 23%;
+  text-align: center;
+  margin-left: 25%;
+}
+.small-image-container {
+  text-align: center;
+  margin: 10px;
+  flex: 1 1 calc(33.33% - 20px); /* Each container takes one-third of the width */
+}
+.small-image {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+.name {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.email {
+  font-size: 12px;
+  color: gray;
+}
+.about-body{
+  font-size: 17px;
+  color: white;
+}
+
+.about{
+  font-size: 40px;
+}
+
+.plsp{
+  font-size: 50px;
+  color: white;
+}
+
+.description{
+  color: white;
+  font-size: 30px;
+}
+
+.login-button{
+  margin-top: 10px;
+  color: white;
+  height: 50px;
+  width: 125px;
+  border: none;
+  border-radius: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(5, 63, 5);
+  transition: background-color .20s,
+  color .20s;
+}
+
+.login-button:hover{
+  background-color: white;
+  color: rgb(5, 63, 5);
+  opacity: 0.9;
+}
+
+.login-button:active{
+  opacity: 0.7;
+}
+
+.sign-up{
+  cursor: pointer;
+  width: 125px;
+  height: 50px;
+  cursor: pointer;
+  border: solid;
+  background-color: transparent;
+  color: rgb(10, 80, 10);
+  border-color: rgb(10, 80, 10);
+  border-width: 2px;
+  border-radius: 25px;
+  font-size: 20px;
+  transition: background-color .20s,
+  color .20s;
+}
+
+.sign-up:hover{
+  background-color: rgb(5, 63, 5);
+  color: white;
+  border: none;
+}
+
+.sign-up:active{
+  opacity: 0.7;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+      padding: 15px;
+  }
+
+  .navbar a {
+      padding: 10px 15px;
+  }
+
+  .logo {
+      width: 80px;
+  }
+
+  .footer {
+      padding: 15px;
+  }
+
+  .content {
+      padding: 10px;
+  }
+
+  .small-image-container {
+      flex: 1 1 calc(50% - 20px);
+  }
+
+  .small-image {
+      width: 150px;
+      height: auto;
+      cursor: pointer;
+      margin-bottom: 10px;
+}
+
+  .name {
+      font-size: 12px;
+  }
+
+  .email {
+      font-size: 10px;
+  }
+}

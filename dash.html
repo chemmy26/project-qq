@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Scheduling Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="mb-4">School Scheduling Form</h2>
+    <form id="scheduleForm">
+        <div id="scheduleContainer">
+            <!-- Schedule input fields will be added dynamically here -->
+        </div>
+        <button type="button" class="btn btn-primary mt-3" onclick="addSchedule()">Add Schedule</button>
+        <button type="submit" class="btn btn-success mt-3">Submit</button>
+    </form>
+
+    <div class="mt-4" id="scheduleTableContainer" style="display: none;">
+        <h4>Submitted Schedule Table:</h4>
+        <table class="table table-bordered">
+            <thead>
+                <tr id="tableHeaderRow">
+                    <th>Day</th>
+                    <th>Schedule</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                </tr>
+            </thead>
+            <tbody id="scheduleTableBody">
+                <!-- Submitted schedule details will be populated here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
